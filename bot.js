@@ -24,14 +24,14 @@ client.on('ready', () => {
 
 
 
-  const middagsMelding = new cron.CronJob('00 00 20 * * *', () => {
+  const middagsMelding = new cron.CronJob('00 00 18 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
     channel.send(' @everyone Minn Randomfevva på at han må spise ')
   })
 
   middagsMelding.start()
 
-  const jonaMelding = new cron.CronJob('00 30 20 * * *', () => {
+  const jonaMelding = new cron.CronJob('00 20 20 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
     channel.send(' @Zuqerberg#4722 Pulte morra di ')
   })
