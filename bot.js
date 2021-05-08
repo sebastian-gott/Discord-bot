@@ -24,16 +24,16 @@ client.on('ready', () => {
 
 
 
-  async const middagsMelding = new cron.CronJob('00 00 20 * * *', () => {
+  const middagsMelding = new cron.CronJob('00 00 20 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
-    await channel.send(' @everyone Minn Randomfevva på at han må spise ')
+    channel.send(' @everyone Minn Randomfevva på at han må spise ')
   })
 
   middagsMelding.start()
 
-  async const jonaMelding = new cron.CronJob('00 06 19 * * *', () => {
+  const jonaMelding = new cron.CronJob('00 08 19 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
-    await channel.send(' @everyone Pulte morra di ')
+    channel.send(' @everyone Pulte morra di ')
   })
 
   jonaMelding.start()
