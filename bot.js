@@ -31,7 +31,7 @@ client.on('ready', () => {
 
   middagsMelding.start()
 
-  const jonaMelding = new cron.CronJob('00 17 19 * * *', () => {
+  const jonaMelding = new cron.CronJob('00 30 19 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
     channel.send(' @everyone Pulte morra di ')
   })
