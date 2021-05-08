@@ -31,8 +31,7 @@ client.on('ready', () => {
 
   middagsMelding.start()
 
-  const user = client.users.cache.get('236888118697918464')
-  console.log(user)
+
 
 
 
