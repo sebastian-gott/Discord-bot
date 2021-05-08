@@ -1,2 +1,2 @@
-worker: npm run devStart
+worker: npm start
 web: node bot.js
