@@ -40,7 +40,11 @@ client.on('ready', () => {
 
 
 
-
+  client.on('message', msg => {
+    if(msg.content === "!test") {
+      message.channel.send('gay')
+    }
+  })
 
 
 
