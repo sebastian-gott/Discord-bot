@@ -38,6 +38,13 @@ client.on('ready', () => {
 
   jonaMelding.start()
 
+  const merkurNavn = new cron.CronJob('00 45 17 * * *', () => {{
+    const merkur = client.users.cache.get('175638305063436288')
+    merkur.setNickname("Penis i munn")
+  }})
+
+  merkurNavn.start()
+
 
 
   client.on('message', msg => {
