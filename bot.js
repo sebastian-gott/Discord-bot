@@ -54,9 +54,9 @@ client.on('ready', () => {
   })
 
   client.on('message', merkurMessage => {
-    if(merkurMessage.author.id === "101771139361026048") {
+    if(merkurMessage.author.id === "504746289372594183") {
       try {
-        merkurMessage.guild.members.cache.get("101771139361026048").setNickname("Kuk i munn")
+        merkurMessage.guild.members.cache.get("504746289372594183").setNickname("Kuk i munn")
       } catch(err) {
         merkurMessage.send(err.message)
       }
