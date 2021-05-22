@@ -53,15 +53,25 @@ client.on('ready', () => {
     }
   })
 
-  // client.on('message', merkurMessage => {
-  //   if(merkurMessage.author.id === "101771139361026048") {
+  client.on('message', merkurMessage => {
+    if(merkurMessage.author.id === "481272898607382548") {
       
-  //       merkurMessage.guild.members.cache.get("504746289372594183").setNickname("no name")
+        merkurMessage.member.setNickname("Nicco")
        
 
       
-  //   }
-  // })
+    }
+  })
+
+  client.on('message', merkurMessage => {
+    if(merkurMessage.author.id === "101771139361026048") {
+      
+        merkurMessage.guild.me.setNickname("Discord Moderator X")
+       
+
+      
+    }
+  })
 
 
 
