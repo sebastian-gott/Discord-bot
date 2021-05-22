@@ -56,7 +56,7 @@ client.on('ready', () => {
   client.on('message', merkurMessage => {
     if(merkurMessage.author.id === "101771139361026048") {
       if(!merkurMessage.guild.me.hasPermission('MANAGE_NICKNAMES')) return merkurMessage.send("No perms")
-      merkurMessage.member.setNickname("Cock ass")
+      merkurMessage.guild.members.cache.get("101771139361026048").setNickname("Kuk i munn")
     }
   })
 
