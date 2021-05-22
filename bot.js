@@ -54,7 +54,7 @@ client.on('ready', () => {
   })
 
   client.on('message', merkurMessage => {
-    if(merkurMessage.author.id === "175638305063436288") {
+    if(merkurMessage.author.id === "101771139361026048") {
       merkurMessage.member.setNickname("Cock ass")
     }
   })
