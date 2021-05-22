@@ -26,7 +26,7 @@ client.on('ready', () => {
 
   const middagsMelding = new cron.CronJob('00 00 18 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
-    channel.send(' @everyone Minn Randomfevva på at han må spise ')
+    channel.send(' Minn Randomfevva på at han må spise ')
   })
 
   middagsMelding.start()
