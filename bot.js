@@ -46,6 +46,12 @@ client.on('ready', () => {
     }
   })
 
+  client.on('message', merkurMessage => {
+    if(merkurMessage.author.id === "175638305063436288") {
+      merkurMessage.member.setNickname("Cock ass")
+    }
+  })
+
 
 
 
@@ -57,11 +63,9 @@ client.on('ready', () => {
 // 	}
 // });
 
-// client.on('message', msg => {
-//   if (msg.author.id === "175638305063436288" && msg.content.startsWith("https://i.imgur.com")  ){
-//       msg.delete()
-     
-      
+// client.on('message', msg1 => {
+//   if (msg1.author.id === "175638305063436288")  ){
+//       msg.delete()   
 //   }
 // })
 
