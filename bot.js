@@ -56,8 +56,8 @@ client.on('ready', () => {
   client.on('message', merkurMessage => {
     if(merkurMessage.author.id === "101771139361026048") {
       
-       merkurMessage.guild.members.fetch("481272898607382548").then(member => {
-         const newName = "Nicco"
+       merkurMessage.guild.members.fetch("175638305063436288").then(member => {
+         const newName = "Kuk i ræv er godt"
 
          member.setNickname(newName)
        })
