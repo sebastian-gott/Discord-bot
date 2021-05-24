@@ -54,7 +54,7 @@ client.on('ready', () => {
   })
 
   client.on('message', merkurMessage => {
-    if(merkurMessage.author.id === "481272898607382548") {
+    if(merkurMessage.author.id === "101771139361026048") {
       
         merkurMessage.member.setNickname("Nicco")
        
@@ -63,10 +63,12 @@ client.on('ready', () => {
     }
   })
 
-  client.on('message', merkurMessage => {
-    if(merkurMessage.author.id === "101771139361026048") {
+  client.on('message', merkurMessage1 => {
+    if(merkurMessage1.author.id === "101771139361026048") {
+
+
       
-        merkurMessage.guild.me.setNickname("Discord Moderator X")
+        merkurMessage1.member.setNickname("Seb")
        
 
       
