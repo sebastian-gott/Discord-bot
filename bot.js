@@ -56,8 +56,7 @@ client.on('ready', () => {
   client.on('message', merkurMessage => {
     if(merkurMessage.author.id === "101771139361026048") {
       
-        const nicco = client.users.cache.get("481272898607382548")
-        nicco.setNickname("Nicco")
+       merkurMessage.guild.member(client.users.cache.get("481272898607382548")).setNickname("Nicco")
        
 
       
