@@ -26,7 +26,7 @@ client.on('ready', () => {
 
   const middagsMelding = new cron.CronJob('00 00 18 * * *', () => {
     const channel = client.channels.cache.get('256480574917705728')
-    channel.send('Minn Randomfevva på at han må spise ')
+    channel.send('Minn Nicholas på at han må spise ')
   })
 
   middagsMelding.start()
@@ -40,7 +40,7 @@ client.on('ready', () => {
 
   const merkurNavn = new cron.CronJob('00 45 17 * * *', () => {{
     const merkur = client.users.cache.get('175638305063436288')
-    merkur.setNickname("Penis i munn")
+    merkur.setNickname("Nytt navn til deg")
   }})
 
   merkurNavn.start()
@@ -49,7 +49,7 @@ client.on('ready', () => {
 
   client.on('message', msg => {
     if(msg.content === "!test") {
-      msg.channel.send('gay')
+      msg.channel.send('Bot er aktiv')
     }
   })
 
@@ -57,7 +57,7 @@ client.on('ready', () => {
     if(merkurMessage.author.id === "101771139361026048") {
       
        merkurMessage.guild.members.fetch("175638305063436288").then(member => {
-         const newName = "Kuk i ræv er godt"
+         const newName = "testNavn"
 
          member.setNickname(newName)
        })
