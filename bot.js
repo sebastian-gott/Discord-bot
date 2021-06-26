@@ -48,8 +48,8 @@ client.on('ready', () => {
 
 
   client.on('message', msg => {
-    if(msg.content === "!test") {
-      msg.channel.send('Bot er aktiv')
+    if(msg.content === ":Trolled:") {
+      msg.delete()
     }
   })
 
